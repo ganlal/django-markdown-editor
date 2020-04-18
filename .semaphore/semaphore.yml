@@ -34,7 +34,8 @@ blocks:
         - name: Checklist
           commands:
             - cd martor_demo
-            - python3 manage.py check --deploy
+            - sem-version python 3.6
+            - python manage.py check --deploy
         - name: Style Check
           commands:
             - pip install flake8
