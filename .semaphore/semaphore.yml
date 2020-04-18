@@ -28,14 +28,13 @@ blocks:
         - name: Unit Tests
           commands:
             - cd martor_demo
-            - python3.6 manage.py makemigrations
-            - python3.6 manage.py migrate
-            - python3.6 manage.py test
+            - python manage.py makemigrations
+            - python manage.py migrate
+            - python manage.py test
         - name: Checklist
           commands:
             - cd martor_demo
-            - sem-version python 3.6
-            - python3.6 manage.py check --deploy
+            - python manage.py check --deploy
         - name: Style Check
           commands:
             - pip install flake8
